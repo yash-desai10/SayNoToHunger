@@ -1,0 +1,180 @@
+/* id starts with #,
+ tag starts without #,
+ class starts with period .*/
+
+
+.tabable {
+	max-width: 950px;
+	margin: 0 auto;
+	padding-right: 15px;
+  padding-left: 15px;
+}
+.tab-content {
+	padding: 0 20px;
+}
+.nav-tabs.nav-justified>li>a {
+	min-height: 62px;
+}
+
+.navbar-brand {
+	color: #1d304f;
+}
+
+#slogan {
+    float: none;
+    display: flow-root;
+    text-align: center;
+    display:block;
+    color:#1d304f;
+}
+
+#signUpLinkWhenCollapsed {
+	text-align: right;
+	margin-right: 5px
+}
+
+#pills-tabContent {
+    margin-top: 30px;
+}
+
+/* Source: https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked*/
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+/* change color of tab pills*/
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    color: #23527c;
+    background-color: #eee;
+}
+
+/* add space between "edit" and "remove" */
+
+.actions {
+    display: inline-block;
+    padding-right: 10px;
+    max-width: 5%;
+}
+.actions i {
+    margin-right: 15px;
+    cursor: pointer;
+}
+.add-new-item {
+	display: inline-block;
+	width: 94%;
+}
+.add-new-item span{
+	padding-right: 10px;
+}
+.add-new-item input {
+	width: 100%;
+	max-width: 600px;
+	margin-bottom: 10px;
+}
+.form-control {
+    width: auto;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #1d304f;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 15px
+}
+
+/*Navigation Bar behaviour begin ***************************/
+@media (min-width: 768px){
+	.navbar-nav>li>a {
+    	padding-right: 10px;
+    	padding-left: 10px;
+	}
+	.container {
+    	width: 768px;
+	}
+}
+
+@media (max-width: 768px){
+    .nav>li.log-in-button {
+        text-align: right;
+        margin-right: 15px;
+    }
+
+    .actions {
+        display: block;
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 950px){
+	.navbar-nav>li>a {
+    	padding-right: 10px;
+    	padding-left: 10px;
+	}
+	.container {
+    	width: 950px;
+	}
+}
+
+@media (min-width: 1200px){
+	.container {
+    	width: 1200px;
+	}
+}
+
+.box {
+	height: 230px;
+	width:100%;
+	background-color: #eee;
+    overflow: hidden;
+}
+
+/*Navigation Bar behaviour end ******************************/
+
+/* adding scroll*/
+.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.scroll-container .block {
+	height: 300px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 8px;
+	display: inline-block;
+	width: 24.6%;
+	line-height: 2em;
+}
+
+.card-keys{
+	display: inline-block;
+	min-width: 44px;
+}
+
+.block .btn-group {
+	margin-top: 1em;
+}
+
+/*User cards behaviour begin ***************************/
+@media (max-width: 950px) {
+	.scroll-container .block {
+	width: 33%;
+	}
+}
+
+@media (max-width: 768px) {
+	.scroll-container .block {
+	width: 49.6%;
+	}
+}
+
+@media (max-width: 540px) {
+	.scroll-container .block {
+	width: 99.6%;
+	}
+}
+
+/*User cards behaviour end ***************************/

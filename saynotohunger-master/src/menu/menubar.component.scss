@@ -1,0 +1,60 @@
+// place the styles specific to the menu html
+.menubarcolor {
+    background-color: #A0DB20;
+}
+
+/* 
+    To make the selected menu bolder
+    Modified from the source from https://stackoverflow.com/questions/41743102/changing-the-color-of-active-nav-item
+*/ 
+.navbar-nav > .active{
+    font-weight: bolder;
+}
+
+/* 
+    To make the selected menu bolder
+    Modified from the source from https://stackoverflow.com/questions/41743102/changing-the-color-of-active-nav-item
+*/
+.nav-item > a:hover {
+    color: white;
+}
+
+.dropdown-menu > li :hover {
+    background-color: #B0E0E6;
+    font-weight: bold;
+    width: 100%;
+}
+
+.dropdown-menu > li > a{
+    color: #A0DB20;
+}
+
+#userProfileMenu {
+    color: #A0DB20 !important;
+}
+
+@media (min-width: 500px) {
+    .userProfileDropDown {
+        margin-left: 33.33%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    #userProfileDropDown {
+        width: 55%;
+        margin-left: 50% !important;
+        }
+    }
+    
+    @media (min-width: 450px) and (max-width: 900px) {
+        #userProfileDropDown {
+            width: 35%;
+            margin-left: 70% !important;
+        }
+    }
+    @media (min-width: 900px) {
+        #userProfileDropDown {
+            width: 40%;
+            margin-left: 70% !important;
+        }
+    }
